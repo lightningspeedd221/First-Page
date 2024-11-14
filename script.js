@@ -31,4 +31,21 @@ window.addEventListener("load", async function() {
     await delay(1000);
     document.getElementById("loading-screen").style.display = "none";
     document.getElementById("content").style.display = "block";
+    Video();
 });//
+
+function Video()
+{
+    if(document.getElementById("content").style.display == "block")
+    {
+        const video = document.getElementById('videoBackground');
+        video.style.display = 'block';  // Show the video
+        // Create an Audio object
+        const sound = new Audio('sounds/kingvon.mp3');
+        sound.volume = 0.5;
+        // Play the sound
+        video.play();                   // Play the video
+        sound.play();
+    }
+
+}

@@ -79,7 +79,18 @@ button:active {
     animation: spin 1s linear infinite;
     margin-bottom: 20px;
 }
-
+        /* Video background styling */
+        #videoBackground {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: none; /* Start hidden, show when button is clicked */
+            z-index: -1;   /* Behind other content */
+            filter: blur(1px); /* Apply a 5px blur */
+        }
 /* Spin animation */
 @keyframes spin {
     0% { transform: rotate(0deg); }
